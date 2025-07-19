@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bola Brand</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Plus+Jakarta+Sans:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <nav class="navbar">
+    <div class="container">
+      <div class="brand">The Bola Brand</div>
+      <button id="menu-toggle" class="menu-toggle">☰</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#highlights">Shop</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="https://wa.me/2347054437192">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url('bgimage2.jpg');">
+    <div class="hero-content container">
+      <h1>The Bola Brand</h1>
+      <p class="tagline">Nails. Bags. Statement Pieces.</p>
+      <a href="https://wa.me/2347054437192" class="btn whatsapp-cta">Chat on WhatsApp</a>
+    </div>
+  </section>
+
+
+  <section id="highlights" class="product-highlights container">
+    <h2>Product Highlights</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="essencepouch1.jpg" alt="Nails">
+        <p>Essence Pouch</p>
+      </div>
+      <div class="card">
+        <img src="newtote.jpg" alt="Handbags">
+        <p>Totebags</p>
+      </div>
+      <div class="card">
+        <img src="purse.jpg" alt="Tote Bags">
+        <p> Digital Purse</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="popular-products container">
+    <h2>All Products</h2>
+    <div class="carousel">
+      <div class="product">
+        <img src="tote1.jpg" alt="Glamour Nails">
+        <p>Totebag - #5000</p>
+        <a href="https://wa.me/2347054437192" class="btn order-btn">Order Now</a>
+      </div>
+      <div class="product">
+        <img src="essencepouch2.jpg" alt="Chic Handbag">
+        <p>Essence pouch - #4000</p>
+        <a href="https://wa.me/2347054437192" class="btn order-btn">Order Now</a>
+      </div>
+      <div class="product">
+        <img src="tote3.jpg" alt="Everyday Tote">
+        <p>Everyday Tote - #5000</p>
+        <a href="https://wa.me/2347054437192" class="btn order-btn">Order Now</a>
+      </div>
+      <div class="product">
+        <img src="purse2.jpg" alt="Sparkle Nails">
+        <p>Digital purse - #5000</p>
+        <a href="https://wa.me/2347054437192" class="btn order-btn">Order Now</a>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="about" class="about container">
+    <h2>About Bola Brand</h2>
+    <p>Bola Brand is a fashion and beauty brand dedicated to empowering women through stylish and high-quality accessories. Our curated collections of nails, handbags, and tote bags are designed to complement your unique style and make a statement.</p>
+  </section>
+
+  <footer id="contact" class="footer">
+    <div class="container">
+      <ul class="footer-links">
+        <li><a href="#highlights">Shop</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="https://wa.me/2347054437192">Contact</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+      <div class="iclass">
+        <a href="https://instagram.com/"><i class="bx bxl-instagram-alt"></i></a>
+        <a href="https://wa.me/2347054437192"><i class="bx bxl-whatsapp"></i></a>
+      </div>
+      <div class="social-icons">
+       <p>&copy; 2025 Bola Brand. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+ 
+  <a href="https://wa.me/2347054437192" class="whatsapp-float" target="_blank">
+    <img src="images (4).png" alt="WhatsApp">
+  </a>
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      document.getElementById('nav-links').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
