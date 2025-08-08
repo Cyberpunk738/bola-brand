@@ -3,116 +3,199 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bola Brand</title>
+  <meta name="description" content="Bola Brand - Premium fashion accessories including nails, bags, and statement pieces. Shop our curated collection of stylish handbags and tote bags.">
+  <meta name="keywords" content="fashion, accessories, handbags, tote bags, nails, statement pieces, Bola Brand">
+  <title>Bola Brand - Premium Fashion Accessories</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Plus+Jakarta+Sans:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="asset/images (4).png">
 </head>
 <body>
   
-  <nav class="navbar">
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="container">
-      <div class="brand">The Bola Brand</div>
-      <button id="menu-toggle" class="menu-toggle">☰</button>
-      <ul id="nav-links" class="nav-links">
-        <li><a href="#highlights">Shop</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="https://wa.me/2347054437192">Contact</a></li>
+      <div class="brand" aria-label="Bola Brand Logo">The Bola Brand</div>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <ul id="nav-links" class="nav-links" role="menubar">
+        <li role="none"><a href="#highlights" role="menuitem">Shop</a></li>
+        <li role="none"><a href="#about" role="menuitem">About</a></li>
+        <li role="none"><a href="https://wa.me/2347054437192" role="menuitem" target="_blank" rel="noopener">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-
-  <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url('bgimage2.jpg');">
+  <!-- Hero Section -->
+  <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url('asset/bgimage2.jpg');" role="banner">
     <div class="hero-content container">
       <h1>The Bola Brand</h1>
       <p class="tagline">Nails. Bags. Statement Pieces.</p>
-      <a href="https://wa.me/2347054437192" class="btn whatsapp-cta">Chat on WhatsApp</a>
+      <a href="https://wa.me/2347054437192" class="btn whatsapp-cta" target="_blank" rel="noopener">
+        <i class="bx bxl-whatsapp"></i>
+        Chat on WhatsApp
+      </a>
     </div>
   </section>
 
-
-  <section id="highlights" class="product-highlights container">
-    <h2>Product Highlights</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="essencepouch1.jpg" alt="Nails">
+  <!-- Product Highlights -->
+  <section id="highlights" class="product-highlights container" role="region" aria-labelledby="highlights-heading">
+    <h2 id="highlights-heading">Product Highlights</h2>
+    <div class="grid" role="list">
+      <article class="card" role="listitem">
+        <img src="asset/essencepouch1.jpg" alt="Essence Pouch - Premium fashion accessory" loading="lazy">
         <p>Essence Pouch</p>
-      </div>
-      <div class="card">
-        <img src="newtote.jpg" alt="Handbags">
+      </article>
+      <article class="card" role="listitem">
+        <img src="asset/newtote.jpg" alt="Stylish Totebags - Perfect for everyday use" loading="lazy">
         <p>Totebags</p>
-      </div>
-      <div class="card">
-        <img src="purse.jpg" alt="Tote Bags">
-        <p> Digital Purse</p>
-      </div>
+      </article>
+      <article class="card" role="listitem">
+        <img src="asset/purse.jpg" alt="Digital Purse - Modern and elegant design" loading="lazy">
+        <p>Digital Purse</p>
+      </article>
     </div>
   </section>
 
-  
-  <section class="popular-products container">
-    <h2>All Products</h2>
-    <div class="carousel">
-      <div class="product">
-        <img src="tote1.jpg" alt="Glamour Nails">
+  <!-- All Products -->
+  <section class="popular-products container" role="region" aria-labelledby="products-heading">
+    <h2 id="products-heading">All Products</h2>
+    <div class="carousel" role="list">
+      <article class="product" role="listitem">
+        <img src="asset/tote1.jpg" alt="Glamour Totebag - Premium quality" loading="lazy">
         <p>Totebag - #5000</p>
-        <a href="https://wa.me/2347054437192" class="btn order-btn">Order Now</a>
-      </div>
-      <div class="product">
-        <img src="essencepouch2.jpg" alt="Chic Handbag">
+        <a href="https://wa.me/2347054437192?text=Hi! I'm interested in the Totebag for #5000" class="btn order-btn" target="_blank" rel="noopener">
+          <i class="bx bx-shopping-bag"></i>
+          Order Now
+        </a>
+      </article>
+      <article class="product" role="listitem">
+        <img src="asset/essencepouch2.jpg" alt="Chic Essence Pouch - Elegant design" loading="lazy">
         <p>Essence pouch - #4000</p>
-        <a href="https://wa.me/2347054437192" class="btn order-btn">Order Now</a>
-      </div>
-      <div class="product">
-        <img src="tote3.jpg" alt="Everyday Tote">
+        <a href="https://wa.me/2347054437192?text=Hi! I'm interested in the Essence Pouch for #4000" class="btn order-btn" target="_blank" rel="noopener">
+          <i class="bx bx-shopping-bag"></i>
+          Order Now
+        </a>
+      </article>
+      <article class="product" role="listitem">
+        <img src="asset/tote3.jpg" alt="Everyday Tote - Versatile and stylish" loading="lazy">
         <p>Everyday Tote - #5000</p>
-        <a href="https://wa.me/2347054437192" class="btn order-btn">Order Now</a>
-      </div>
-      <div class="product">
-        <img src="purse2.jpg" alt="Sparkle Nails">
+        <a href="https://wa.me/2347054437192?text=Hi! I'm interested in the Everyday Tote for #5000" class="btn order-btn" target="_blank" rel="noopener">
+          <i class="bx bx-shopping-bag"></i>
+          Order Now
+        </a>
+      </article>
+      <article class="product" role="listitem">
+        <img src="asset/purse2.jpg" alt="Digital Purse - Modern accessory" loading="lazy">
         <p>Digital purse - #5000</p>
-        <a href="https://wa.me/2347054437192" class="btn order-btn">Order Now</a>
-      </div>
+        <a href="https://wa.me/2347054437192?text=Hi! I'm interested in the Digital Purse for #5000" class="btn order-btn" target="_blank" rel="noopener">
+          <i class="bx bx-shopping-bag"></i>
+          Order Now
+        </a>
+      </article>
     </div>
   </section>
 
-  
-  <section id="about" class="about container">
-    <h2>About Bola Brand</h2>
-    <p>Bola Brand is a fashion and beauty brand dedicated to empowering women through stylish and high-quality accessories. Our curated collections of nails, handbags, and tote bags are designed to complement your unique style and make a statement.</p>
+  <!-- About Section -->
+  <section id="about" class="about container" role="region" aria-labelledby="about-heading">
+    <h2 id="about-heading">About Bola Brand</h2>
+    <p>Bola Brand is a fashion and beauty brand dedicated to empowering women through stylish and high-quality accessories. Our curated collections of nails, handbags, and tote bags are designed to complement your unique style and make a statement. We believe every woman deserves to feel confident and beautiful with accessories that reflect her personality.</p>
   </section>
 
-  <footer id="contact" class="footer">
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
     <div class="container">
-      <ul class="footer-links">
-        <li><a href="#highlights">Shop</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="https://wa.me/2347054437192">Contact</a></li>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-      </ul>
-      <div class="iclass">
-        <a href="https://instagram.com/"><i class="bx bxl-instagram-alt"></i></a>
-        <a href="https://wa.me/2347054437192"><i class="bx bxl-whatsapp"></i></a>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="#highlights">Shop</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="https://wa.me/2347054437192" target="_blank" rel="noopener">Contact</a></li>
+          <li><a href="#" aria-label="Frequently Asked Questions">FAQ</a></li>
+          <li><a href="#" aria-label="Privacy Policy">Privacy Policy</a></li>
+        </ul>
+      </nav>
+      <div class="iclass" aria-label="Social media links">
+        <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Follow us on Instagram">
+          <i class="bx bxl-instagram-alt"></i>
+        </a>
+        <a href="https://wa.me/2347054437192" target="_blank" rel="noopener" aria-label="Contact us on WhatsApp">
+          <i class="bx bxl-whatsapp"></i>
+        </a>
       </div>
       <div class="social-icons">
-       <p>&copy; 2025 Bola Brand. All rights reserved.</p>
+        <p>&copy; 2025 Bola Brand. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
- 
-  <a href="https://wa.me/2347054437192" class="whatsapp-float" target="_blank">
-    <img src="images (4).png" alt="WhatsApp">
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/2347054437192" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <img src="asset/images (4).png" alt="WhatsApp" loading="lazy">
   </a>
 
+  <!-- JavaScript -->
   <script>
-    document.getElementById('menu-toggle').addEventListener('click', function() {
-      document.getElementById('nav-links').classList.toggle('active');
+    // Simple performance optimizations
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    const hamburger = menuToggle?.querySelector('.hamburger');
+    const navbar = document.querySelector('.navbar');
+
+    // Mobile menu
+    if (menuToggle && navLinks && hamburger) {
+      menuToggle.addEventListener('click', function() {
+        const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', !isExpanded);
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('active');
+      });
+
+      // Close menu on link click
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+          menuToggle.setAttribute('aria-expanded', 'false');
+          hamburger.classList.remove('active');
+        });
+      });
+    }
+
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
     });
+
+    // Throttled scroll effect for better performance
+    let ticking = false;
+    function updateNavbar() {
+      if (navbar) {
+        if (window.scrollY > 100) {
+          navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+          navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.15)';
+        } else {
+          navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+          navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
+        }
+      }
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', function() {
+      if (!ticking) {
+        requestAnimationFrame(updateNavbar);
+        ticking = true;
+      }
+    }, { passive: true });
   </script>
 </body>
 </html>
