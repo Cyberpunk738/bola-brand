@@ -33,69 +33,253 @@
   <!-- Hero Section -->
   <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url('asset/bgimage2.jpg');" role="banner">
     <div class="hero-content container">
+      <div class="hero-badge">✨ Premium Fashion Accessories</div>
       <h1>The Bola Brand</h1>
       <p class="tagline">Nails. Bags. Statement Pieces.</p>
-      <a href="https://wa.me/2347054437192" class="btn whatsapp-cta" target="_blank" rel="noopener">
-        <i class="bx bxl-whatsapp"></i>
-        Chat on WhatsApp
-      </a>
+      <p class="hero-subtitle">Elevate your style with our curated collection of premium handbags, elegant pouches, and statement accessories designed for the modern woman.</p>
+
+      <div class="hero-cta-group">
+        <a href="#highlights" class="btn shop-now-btn">
+          <i class="bx bx-shopping-bag"></i>
+          Shop Collection
+        </a>
+        <a href="https://wa.me/2347054437192" class="btn whatsapp-cta" target="_blank" rel="noopener">
+          <i class="bx bxl-whatsapp"></i>
+          Chat on WhatsApp
+        </a>
+      </div>
     </div>
+
+    <!-- Floating Product Images -->
+    <div class="floating-products">
+      <div class="floating-product floating-product-1">
+        <img src="asset/essencepouch1.jpg" alt="Floating product 1" loading="lazy">
+      </div>
+      <div class="floating-product floating-product-2">
+        <img src="asset/newtote.jpg" alt="Floating product 2" loading="lazy">
+      </div>
+      <div class="floating-product floating-product-3">
+        <img src="asset/purse.jpg" alt="Floating product 3" loading="lazy">
+      </div>
+    </div>
+
+   
   </section>
 
   <!-- Product Highlights -->
   <section id="highlights" class="product-highlights container" role="region" aria-labelledby="highlights-heading">
-    <h2 id="highlights-heading">Product Highlights</h2>
+    <h2 id="highlights-heading">Featured Collections</h2>
     <div class="grid" role="list">
-      <article class="card" role="listitem">
-        <img src="asset/essencepouch1.jpg" alt="Essence Pouch - Premium fashion accessory" loading="lazy">
-        <p>Essence Pouch</p>
+      <article class="product-card featured" role="listitem">
+        <div class="product-image">
+          <img src="asset/essencepouch1.jpg" alt="Essence Pouch - Premium fashion accessory" loading="lazy">
+          <div class="product-badge">Featured</div>
+          <div class="product-overlay">
+            <a href="https://wa.me/2347054437192?text=Hi! I'm interested in the Essence Pouch collection" class="quick-view-btn" target="_blank" rel="noopener">
+              <i class="bx bx-search-alt"></i>
+              View Collection
+            </a>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Essence Pouch</h3>
+          <p class="product-description">Premium fashion accessory for the modern woman</p>
+          <div class="product-price">
+            <span class="price-range">From ₦4,000</span>
+          </div>
+        </div>
       </article>
-      <article class="card" role="listitem">
-        <img src="asset/newtote.jpg" alt="Stylish Totebags - Perfect for everyday use" loading="lazy">
-        <p>Totebags</p>
+      <article class="product-card featured" role="listitem">
+        <div class="product-image">
+          <img src="asset/newtote.jpg" alt="Stylish Totebags - Perfect for everyday use" loading="lazy">
+          <div class="product-badge bestseller">Bestseller</div>
+          <div class="product-overlay">
+            <a href="https://wa.me/2347054437192?text=Hi! I'm interested in the Totebag collection" class="quick-view-btn" target="_blank" rel="noopener">
+              <i class="bx bx-search-alt"></i>
+              View Collection
+            </a>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Totebags</h3>
+          <p class="product-description">Stylish and versatile bags for everyday use</p>
+          <div class="product-price">
+            <span class="price-range">From ₦5,000</span>
+          </div>
+        </div>
       </article>
-      <article class="card" role="listitem">
-        <img src="asset/purse.jpg" alt="Digital Purse - Modern and elegant design" loading="lazy">
-        <p>Digital Purse</p>
+      <article class="product-card featured" role="listitem">
+        <div class="product-image">
+          <img src="asset/purse.jpg" alt="Digital Purse - Modern and elegant design" loading="lazy">
+          <div class="product-badge new">New</div>
+          <div class="product-overlay">
+            <a href="https://wa.me/2347054437192?text=Hi! I'm interested in the Digital Purse collection" class="quick-view-btn" target="_blank" rel="noopener">
+              <i class="bx bx-search-alt"></i>
+              View Collection
+            </a>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Digital Purse</h3>
+          <p class="product-description">Modern and elegant design for tech-savvy women</p>
+          <div class="product-price">
+            <span class="price-range">From ₦5,000</span>
+          </div>
+        </div>
       </article>
     </div>
   </section>
 
   <!-- All Products -->
   <section class="popular-products container" role="region" aria-labelledby="products-heading">
-    <h2 id="products-heading">All Products</h2>
-    <div class="carousel" role="list">
-      <article class="product" role="listitem">
-        <img src="asset/tote1.jpg" alt="Glamour Totebag - Premium quality" loading="lazy">
-        <p>Totebag - #5000</p>
-        <a href="https://wa.me/2347054437192?text=Hi! I'm interested in the Totebag for #5000" class="btn order-btn" target="_blank" rel="noopener">
-          <i class="bx bx-shopping-bag"></i>
-          Order Now
-        </a>
+    <h2 id="products-heading">Shop All Products</h2>
+    <div class="products-grid" role="list">
+      <article class="product-card" role="listitem">
+        <div class="product-image">
+          <img src="asset/tote1.jpg" alt="Glamour Totebag - Premium quality" loading="lazy">
+          <div class="product-badge sale">Hot</div>
+          <div class="product-overlay">
+            <div class="product-actions">
+              <button class="action-btn wishlist-btn" aria-label="Add to wishlist">
+                <i class="bx bx-heart"></i>
+              </button>
+              <a href="https://wa.me/2347054437192?text=Hi! I'm interested in the Glamour Totebag for ₦5000" class="action-btn quick-view-btn" target="_blank" rel="noopener" aria-label="Quick view">
+                <i class="bx bx-search-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Glamour Totebag</h3>
+          <p class="product-description">Premium quality totebag for everyday elegance</p>
+          <div class="product-rating">
+            <div class="stars">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+            </div>
+            <span class="rating-text">(4.9)</span>
+          </div>
+          <div class="product-price">
+            <span class="current-price">₦5,000</span>
+          </div>
+          <a href="https://wa.me/2347054437192?text=Hi! I'm interested in the Glamour Totebag for ₦5000" class="btn order-btn" target="_blank" rel="noopener">
+            <i class="bx bx-shopping-bag"></i>
+            Order Now
+          </a>
+        </div>
       </article>
-      <article class="product" role="listitem">
-        <img src="asset/essencepouch2.jpg" alt="Chic Essence Pouch - Elegant design" loading="lazy">
-        <p>Essence pouch - #4000</p>
-        <a href="https://wa.me/2347054437192?text=Hi! I'm interested in the Essence Pouch for #4000" class="btn order-btn" target="_blank" rel="noopener">
-          <i class="bx bx-shopping-bag"></i>
-          Order Now
-        </a>
+      <article class="product-card" role="listitem">
+        <div class="product-image">
+          <img src="asset/essencepouch2.jpg" alt="Chic Essence Pouch - Elegant design" loading="lazy">
+          <div class="product-badge trending">Trending</div>
+          <div class="product-overlay">
+            <div class="product-actions">
+              <button class="action-btn wishlist-btn" aria-label="Add to wishlist">
+                <i class="bx bx-heart"></i>
+              </button>
+              <a href="https://wa.me/2347054437192?text=Hi! I'm interested in the Chic Essence Pouch for ₦4000" class="action-btn quick-view-btn" target="_blank" rel="noopener" aria-label="Quick view">
+                <i class="bx bx-search-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Chic Essence Pouch</h3>
+          <p class="product-description">Elegant design for the sophisticated woman</p>
+          <div class="product-rating">
+            <div class="stars">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bx-star"></i>
+            </div>
+            <span class="rating-text">(4.7)</span>
+          </div>
+          <div class="product-price">
+            <span class="current-price">₦4,000</span>
+          </div>
+          <a href="https://wa.me/2347054437192?text=Hi! I'm interested in the Chic Essence Pouch for ₦4000" class="btn order-btn" target="_blank" rel="noopener">
+            <i class="bx bx-shopping-bag"></i>
+            Order Now
+          </a>
+        </div>
       </article>
-      <article class="product" role="listitem">
-        <img src="asset/tote3.jpg" alt="Everyday Tote - Versatile and stylish" loading="lazy">
-        <p>Everyday Tote - #5000</p>
-        <a href="https://wa.me/2347054437192?text=Hi! I'm interested in the Everyday Tote for #5000" class="btn order-btn" target="_blank" rel="noopener">
-          <i class="bx bx-shopping-bag"></i>
-          Order Now
-        </a>
+      <article class="product-card" role="listitem">
+        <div class="product-image">
+          <img src="asset/tote3.jpg" alt="Everyday Tote - Versatile and stylish" loading="lazy">
+          <div class="product-overlay">
+            <div class="product-actions">
+              <button class="action-btn wishlist-btn" aria-label="Add to wishlist">
+                <i class="bx bx-heart"></i>
+              </button>
+              <a href="https://wa.me/2347054437192?text=Hi! I'm interested in the Everyday Tote for ₦5000" class="action-btn quick-view-btn" target="_blank" rel="noopener" aria-label="Quick view">
+                <i class="bx bx-search-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Everyday Tote</h3>
+          <p class="product-description">Versatile and stylish for daily adventures</p>
+          <div class="product-rating">
+            <div class="stars">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+            </div>
+            <span class="rating-text">(5.0)</span>
+          </div>
+          <div class="product-price">
+            <span class="current-price">₦5,000</span>
+          </div>
+          <a href="https://wa.me/2347054437192?text=Hi! I'm interested in the Everyday Tote for ₦5000" class="btn order-btn" target="_blank" rel="noopener">
+            <i class="bx bx-shopping-bag"></i>
+            Order Now
+          </a>
+        </div>
       </article>
-      <article class="product" role="listitem">
-        <img src="asset/purse2.jpg" alt="Digital Purse - Modern accessory" loading="lazy">
-        <p>Digital purse - #5000</p>
-        <a href="https://wa.me/2347054437192?text=Hi! I'm interested in the Digital Purse for #5000" class="btn order-btn" target="_blank" rel="noopener">
-          <i class="bx bx-shopping-bag"></i>
-          Order Now
-        </a>
+      <article class="product-card" role="listitem">
+        <div class="product-image">
+          <img src="asset/purse2.jpg" alt="Digital Purse - Modern accessory" loading="lazy">
+          <div class="product-badge new">New</div>
+          <div class="product-overlay">
+            <div class="product-actions">
+              <button class="action-btn wishlist-btn" aria-label="Add to wishlist">
+                <i class="bx bx-heart"></i>
+              </button>
+              <a href="https://wa.me/2347054437192?text=Hi! I'm interested in the Digital Purse for ₦5000" class="action-btn quick-view-btn" target="_blank" rel="noopener" aria-label="Quick view">
+                <i class="bx bx-search-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Digital Purse</h3>
+          <p class="product-description">Modern accessory for the tech-savvy woman</p>
+          <div class="product-rating">
+            <div class="stars">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bx-star"></i>
+            </div>
+            <span class="rating-text">(4.8)</span>
+          </div>
+          <div class="product-price">
+            <span class="current-price">₦5,000</span>
+          </div>
+          <a href="https://wa.me/2347054437192?text=Hi! I'm interested in the Digital Purse for ₦5000" class="btn order-btn" target="_blank" rel="noopener">
+            <i class="bx bx-shopping-bag"></i>
+            Order Now
+          </a>
+        </div>
       </article>
     </div>
   </section>
