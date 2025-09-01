@@ -289,7 +289,7 @@ a {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, rgba(255, 107, 157, 0.9), rgba(232, 85, 138, 0.8)), url('bgimage2.jpg');
+  background: linear-gradient(135deg, rgba(255, 107, 157, 0.9), rgba(232, 85, 138, 0.8)), url('bgimage2.webp');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
