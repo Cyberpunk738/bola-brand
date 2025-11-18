@@ -1,3 +1,3 @@
 # bola-brand
 Bola
-E-commerce site 
+E-commerce site. 
