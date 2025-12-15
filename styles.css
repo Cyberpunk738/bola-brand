@@ -36,6 +36,8 @@ body {
 
 .container h2{
   font-family: 'Playfair Display', serif;
+  font-weight: 300;
+  font-size: 2rem;
 }
 
 a {
