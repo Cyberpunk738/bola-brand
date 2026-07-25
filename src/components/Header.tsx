@@ -40,7 +40,7 @@ export function Header() {
           to="/"
           className="font-display text-xl tracking-[0.28em] uppercase md:absolute md:left-1/2 md:-translate-x-1/2"
         >
-          Bola
+          Bola Brand
         </Link>
 
         <a
