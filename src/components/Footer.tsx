@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="mt-24 border-t border-border/60 bg-sand/60">
       <div className="mx-auto grid max-w-[1400px] gap-10 px-5 py-16 md:grid-cols-4 md:px-10">
         <div className="md:col-span-2">
-          <p className="font-display text-2xl tracking-[0.28em] uppercase">Bola</p>
+          <p className="font-display text-2xl tracking-[0.28em] uppercase">Bola Brand</p>
           <p className="mt-3 max-w-sm text-sm leading-relaxed text-muted-foreground">
             Nails. Bags. Statement pieces. Premium accessories for the modern woman.
           </p>
