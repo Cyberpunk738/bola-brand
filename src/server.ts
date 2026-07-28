@@ -1,13 +1,9 @@
 import "./lib/error-capture";
 import { createStartHandler, defaultStreamHandler } from "@tanstack/react-start/server";
-import { getRouter } from "./router";
 import { consumeLastCapturedError } from "./lib/error-capture";
 import { renderErrorPage } from "./lib/error-page";
 
-const fetchHandler = createStartHandler({
-  createRouter: getRouter,
-  handler: defaultStreamHandler,
-});
+const fetchHandler = createStartHandler(defaultStreamHandler);
 
 async function normalizeCatastrophicSsrResponse(response: Response): Promise<Response> {
   if (response.status < 500) return response;
@@ -36,7 +32,7 @@ function isH3SwallowedErrorBody(body: string): boolean {
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
     try {
-      const response = await fetchHandler(request, { env, ctx });
+      const response = await fetchHandler(request, { context: { env, ctx } as any });
       return await normalizeCatastrophicSsrResponse(response);
     } catch (error) {
       console.error(error);
