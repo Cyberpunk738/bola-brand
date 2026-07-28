@@ -142,9 +142,10 @@ function Index() {
         </p>
 
         <div className="mt-12 grid gap-6 lg:grid-cols-2">
-          <a
-            href={waLink(`Hi! I'm interested in the ${collections[0].name} collection`)}
-            className="group relative block overflow-hidden"
+          <Link
+            to="/shop"
+            search={{ category: collections[0].category }}
+            className="group relative block overflow-hidden rounded-xl"
           >
             <img
               src={collections[0].image}
@@ -152,20 +153,28 @@ function Index() {
               loading="lazy"
               className="h-full min-h-[420px] w-full object-cover transition-transform duration-[900ms] group-hover:scale-105 lg:min-h-[640px]"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-ink/60 to-transparent" />
-            <div className="absolute bottom-0 p-8">
-              <p className="eyebrow text-on-image/80">{collections[0].tag}</p>
-              <h3 className="mt-2 font-display text-3xl text-on-image">{collections[0].name}</h3>
-              <p className="mt-1 text-sm text-on-image/85">{collections[0].price}</p>
+            <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/20 to-transparent" />
+            <div className="absolute bottom-0 p-8 flex items-end justify-between w-full">
+              <div>
+                <p className="eyebrow text-on-image/80">{collections[0].tag}</p>
+                <h3 className="mt-2 font-display text-3xl text-on-image font-medium">
+                  {collections[0].name}
+                </h3>
+                <p className="mt-1 text-sm text-on-image/85">{collections[0].price}</p>
+              </div>
+              <span className="rounded-full bg-background/90 px-4 py-2 text-xs font-medium text-foreground opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 -translate-x-2">
+                Explore Collection →
+              </span>
             </div>
-          </a>
+          </Link>
 
           <div className="grid gap-6">
             {collections.slice(1).map((c) => (
-              <a
+              <Link
                 key={c.name}
-                href={waLink(`Hi! I'm interested in the ${c.name} collection`)}
-                className="group relative block overflow-hidden"
+                to="/shop"
+                search={{ category: c.category }}
+                className="group relative block overflow-hidden rounded-xl"
               >
                 <img
                   src={c.image}
@@ -173,13 +182,18 @@ function Index() {
                   loading="lazy"
                   className="h-[300px] w-full object-cover transition-transform duration-[900ms] group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink/60 to-transparent" />
-                <div className="absolute bottom-0 p-8">
-                  <p className="eyebrow text-on-image/80">{c.tag}</p>
-                  <h3 className="mt-2 font-display text-3xl text-on-image">{c.name}</h3>
-                  <p className="mt-1 text-sm text-on-image/85">{c.price}</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/20 to-transparent" />
+                <div className="absolute bottom-0 p-8 flex items-end justify-between w-full">
+                  <div>
+                    <p className="eyebrow text-on-image/80">{c.tag}</p>
+                    <h3 className="mt-2 font-display text-3xl text-on-image font-medium">{c.name}</h3>
+                    <p className="mt-1 text-sm text-on-image/85">{c.price}</p>
+                  </div>
+                  <span className="rounded-full bg-background/90 px-4 py-2 text-xs font-medium text-foreground opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 -translate-x-2">
+                    Explore Collection →
+                  </span>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
